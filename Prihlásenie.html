@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semestrálna práca</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey) {
+                switch(event.key) {
+                    case 'x':
+                    case 'X':
+                        window.location.href = 'Kontakt.html'; // Ctrl+X otvorí stránku Kontakt
+                        break;
+                    case 'c':
+                    case 'C':
+                        window.location.href = 'O nás.html'; // Ctrl+C otvorí stránku O nás
+                        break;
+                    case 'v':
+                    case 'V':
+                        window.location.href = 'Prihlásenie.html'; // Ctrl+V otvorí stránku Prihlásenie
+                        break;
+                    case 'b':
+                    case 'B':
+                        window.location.href = 'Registrácia.html'; // Ctrl+B otvorí stránku Registrácia
+                        break;
+                    case 'y':
+                    case 'Y':
+                        window.location.href = 'index.html'; // Ctrl+Y návrat na Domovskú stránku
+                        break;
+                }
+            }
+        });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="navbar">
+        <li>
+          <a href="index.html">Domovská stránka</a>
+        </li>
+        <li>
+          <a href="O%20n%C3%A1s.html">O nás</a>
+        </li>
+        <li>
+          <a href="Prihl%C3%A1senie.html">Prihlásenie</a>
+        </li>
+        <li>
+          <a href="Registr%C3%A1cia.html">Registrácia</a>
+        </li>
+        <li>
+          <a href="Kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <p class="pcierne1"></p>
+  <h5>Prihlásenie do účtu</h5>
+  <form method="post" action="prihlásenie.php" class="form1">
+    <fieldset>
+      <label for="pouzivatelskemenoemail">Použivateľské meno/E-mail:</label> <input type="text" name="pouzmenoemail" id="pouzmenoemail"><br>
+      <label for="heslo">Heslo:</label> <input type="password" name="heslo" id="heslo"><br>
+      <input class="tlacidlo1" type="submit" name="prihlas" id="prihlas" value="Prihlásiť"><br>
+    </fieldset>
+    <p class="pcierne2"></p>
+    <footer class="layoutFooter">
+      <div class="footerContainer">
+        <section class="FootSecOne">
+          <h3>Navigácia</h3>
+          <ol class="footerNav">
+            <li>
+              <a href="index.html">Domovská stránka</a>
+            </li>
+            <li>
+              <a href="O%20n%C3%A1s.html">O nás</a>
+            </li>
+            <li>
+              <a href="Prihl%C3%A1senie.html">Prihlásenie</a>
+            </li>
+            <li>
+              <a href="Registr%C3%A1cia.html">Registrácia</a>
+            </li>
+            <li>
+              <a href="Kontakt.html">Kontakt</a>
+            </li>
+          </ol>
+        </section>
+        <section class="FootSecTwo">
+          <h3>Sociálne siete</h3>
+          <ol class="footerNav2">
+            <li>
+              <a href="https://www.facebook.com/">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">Twitter</a>
+            </li>
+          </ol>
+        </section>
+        <section class="FootSecThree">
+          <h3>Kontakt</h3>
+          <ol class="footerNav3">
+            <li>Webhosting</li>
+            <li>Hviezdoslavova 6</li>
+            <li>821 04 Bratislava</li>
+          </ol>
+        </section>
+        <section class="FootSecFour">
+          <h3>O nás</h3>
+          <ol class="footerNav4">
+            <li>FaQ</li>
+            <li>Obchodná spolupráca</li>
+            <li>Ochrana osobných údajov</li>
+            <li>Právna doložka</li>
+          </ol>
+        </section>
+      </div>
+    </footer>
+    <aside class="keyboard-navigation">
+      <h2>Ovládanie klávesnicou</h2>
+      <p>Použite tieto klávesové skratky pre rýchlejšie prechody:</p>
+      <ul>
+        <li><strong>Ctrl+X:</strong> Otvorí stránku Kontakt</li>
+        <li><strong>Ctrl+C:</strong> Otvorí stránku O nás</li>
+        <li><strong>Ctrl+V:</strong> Otvorí stránku Prihlásenie</li>
+        <li><strong>Ctrl+B:</strong> Otvorí stránku Registrácia</li>
+        <li><strong>Ctrl+Y:</strong> Návrat na Domovskú stránku</li>
+      </ul>
+    </aside>
+  </form>
+</body>
+</html>
